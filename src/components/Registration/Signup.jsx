@@ -8,7 +8,15 @@ import Login from "./Login_nav";
 
 const Signup = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
-
+  // create an initial state
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+    firstName: "",
+    lastname "",
+    phoeNumber: "",
+  });
+  
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
